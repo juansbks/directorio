@@ -3,14 +3,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="icon" type="image/x-icon" href="css/favicon.ico">
-        <title>Directorio Sura</title>
+        <title>Portal Sura</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="css/fontawesome.css" type="text/css" rel="stylesheet"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-3.3.1.js"></script>
     </head>
     <body>
     	<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   			<div class="container-fluid">
-  			  <img src="css/tigre.png" style="width: 20%;"><a class="navbar-brand" href="#"><strong>Directorio Sura</strong></a>
+  			  <img src="css/tigre.png" style="width: 20%;"><a class="navbar-brand" href="#"><strong>Portal Sura</strong></a>
   			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" 			aria-label="Toggle navigation">
   			    <span class="navbar-toggler-icon"></span>
   			  </button>
@@ -26,6 +29,21 @@
   			  </div>
   			</div>
 		</nav>
+		<input type="checkbox" id="cerrar">
+		
+		<div class="modal">
+		  <div class="contenido" style="margin-left: 40;
+    margin-bottom: 340;">
+		  	<input type="checkbox" id="cerrar">
+		  	<label for="cerrar" id="btn-cerrar" style="margin-top: -120px; text-align: center;">X</label>
+		    <img src="css/image.png" style="width: 300px; text-align: center;"></img>
+		  </div>
+		</div>
+		<!--Modal para denge-->
+		
+		<!-- Modal -->
+		
+		<!--Fin Modal para denge-->
 		<div class="container-fluid" style="margin-top: 4%;">
 			<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
   				<div class="card-header"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Horarios de atención</div>
@@ -118,8 +136,8 @@
 			    <div id="collapsecero" class="accordion-collapse collapse" aria-labelledby="headingcero" data-bs-parent="#accordionExample" style="">
 			      <div class="accordion-body" style="background-color: #000; color: #fff;">
 			      		<p>Asignación de citas de.<br>* Radiografias Digitales (Odontologia)<br><br>Dirección:<br>Carrera 52 # 82 - 263<br>Carrera 21 # 47 B 05 (Local 4 - Cordialidad)<br><br>Atenció Por orden de llegada<br><br>Telefonos</p>
-			      		<i class="fa fa-phone">&nbsp;&nbsp;6053460482 (Cordialidad)</i> <a href="tel:+576053460482" style="float: right;"><button type="button" class="btn btn-sm btn-success">Llamar</button></a><br><br> 
-			      		<i class="fa fa-phone">&nbsp;&nbsp;6053783582 (Norte)</i> <a href="tel:+576053783582" style="float: right;"><button type="button" class="btn btn-sm btn-success">Llamar</button></a><br><br> 
+			      		<i class="fa fa-phone">&nbsp;&nbsp;6053460482 (Sede Cordialidad)</i> <a href="tel:+576053460482" style="float: right;"><button type="button" class="btn btn-sm btn-success">Llamar</button></a><br><br> 
+			      		<i class="fa fa-phone">&nbsp;&nbsp;6053783582 (Sede 82 Norte)</i> <a href="tel:+576053783582" style="float: right;"><button type="button" class="btn btn-sm btn-success">Llamar</button></a><br><br> 
 
 			      		       
 			      </div>
@@ -191,7 +209,7 @@
 			    </h2>
 			    <div id="collapseseis" class="accordion-collapse collapse" aria-labelledby="headingseis" data-bs-parent="#accordionExample" style="">
 			      <div class="accordion-body" style="background-color: #000; color: #fff;">
-			      		<p>Asignación de citas para<br>* Psicología<br>* Psiquiatría<br>* Terapia Psicologica<br><br>Teléfonos</p>
+			      		<p>Asignación de citas para<br>* Psicologia<br>* Psiquiatria<br>* Terapia Psicologica<br><br>Teléfonos</p>
 			      		<i class="fa fa-phone">&nbsp;&nbsp;6053125232</i> <a href="tel:+576053125232" style="float: right;"><button type="button" class="btn btn-sm btn-success">Llamar</button></a><br><br>
 			      		<i class="fa fa-mobile">&nbsp;&nbsp;3218877633</i> <a href="tel:+573218877633" style="float: right;"><button type="button" class="btn btn-sm btn-success">Llamar</button></a><br><br>			      		
 			      		<i class="fa fa-whatsapp">&nbsp;&nbsp;3214725986</i> <a href="https://wa.me/+573214725986" target="_blank" style="float: right;"><button type="button" class="btn btn-sm btn-success">chat</button></a><br><br>	 		        
@@ -306,14 +324,14 @@
 			    </h2>
 			    <div id="collapsecatorce" class="accordion-collapse collapse" aria-labelledby="headingcatorce" data-bs-parent="#accordionExample" style="">
 			      <div class="accordion-body" style="background-color: #000; color: #fff;">
-			      		<p>Para trámite de autorizaciones<br><br>
-			      			* Tener a la mano: orden generada por la atención, epicrisis o historia clinica de la atención recibida en la clinica.<br>
+			      		<p>Para trámite de incapacidad<br><br>
+			      			* Tener a la mano: Incapacidad prescrita por el medico, epicrisis o historia clinica de la atención recibida en la clinica.<br>
 			      			* Usted debe ingresar a la pagina de<a href="https://portaleps.epssura.com/ServiciosUnClick/" target="_blank"> Servicios a un click </a><br>
 			      			* Posteriormente ingresar usuario y contraseña de sura<br>
 			      			* Ingresar en la pestaña Solicitudes y autorizaciones que se encuentra en la parte superior derecha<br>
 			      			* Luego donde dice Autorización de ordenes y solicitud de servicios<br>
 			      			* Ingresar donde dice envio solicitud de autorización<br>
-			      			* Llenar el formulario y adjuntar orden e la historia clinica</p>			        
+			      			* Lenar el formulario y adjuntar remision o formula medica y la historia clinica</p>			        
 			      </div>
 			    </div>
 			  </div>		 
@@ -334,7 +352,8 @@
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
 	<script type="text/javascript" src="js/carusel.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>      
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 
 
 </html>
